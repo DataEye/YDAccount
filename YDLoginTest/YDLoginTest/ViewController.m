@@ -20,7 +20,7 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor grayColor]];
     //优点登陆SDK初始化
-    [YDAccount initWithAppId:@"1"];
+    [YDAccount initWithAppId:@"U072B3F7D45BB97B5156E954A7872A1B3"];
     //设置登陆框为对话框形式
     [YDAccount setWindowType:Dialog];
     //设置横坚屏切换时不旋转

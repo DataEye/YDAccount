@@ -9,17 +9,6 @@
 #ifndef YDActionType_h
 #define YDActionType_h
 
-typedef NS_ENUM(NSInteger, ActionType)
-{
-    ResetPassword = 1,
-    ChangePassword,
-    BindPhone,
-    UnbindPhone,
-    UserCenter,
-    Login,
-    Regist
-};
-
 typedef NS_ENUM(NSInteger, WindowType)
 {
     Dialog = 0,

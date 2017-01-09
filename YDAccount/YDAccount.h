@@ -20,12 +20,14 @@
 
 @interface YDAccount : NSObject
 
-+(void)initWithAppId:(NSString*)appId;
++(void)initWithAppId:(NSString*)appId openKey:(NSString*)openKey;
 
 +(void)setWindowType:(WindowType)type;
 
 +(void)autoRatate:(BOOL)enable;
 
 +(void)setDelegate:(id<YDAccountDelegate>)delegate;
+
++(YDAccountModel*)currentAccount;
 
 @end
