@@ -7,14 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "YDAccountModel.h"
 #import "YDActionType.h"
+
+@interface YDUserAccount : NSObject
+
+//账号ID，账号惟一标识
+@property(nonatomic, assign)long long accountId;
+//用户名
+@property(nonatomic, copy)NSString* accountName;
+//用户绑定手机号
+@property(nonatomic, copy)NSString* phoneNumber;
+
+@end
 
 @protocol YDAccountDelegate <NSObject>
 
 @optional
--(void)accountLogin:(YDAccountModel*)model;
--(void)accountRegist:(YDAccountModel*)model;
+-(void)accountLogin:(YDUserAccount*)model;
+-(void)accountRegist:(YDUserAccount*)model;
 
 @end
 
@@ -28,6 +38,6 @@
 
 +(void)setDelegate:(id<YDAccountDelegate>)delegate;
 
-+(YDAccountModel*)currentAccount;
++(YDUserAccount*)currentAccount;
 
 @end

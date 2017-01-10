@@ -16,7 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
   - BEMCheckBox (1.4.0)
   - Masonry (1.0.2)
-  - WebViewJavascriptBridge (5.0.5)
+  - WebViewJavascriptBridge (5.2.0)
   - YDAccount (1.0):
     - AFNetworking (~> 3.0)
     - BEMCheckBox
@@ -30,7 +30,7 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BEMCheckBox: e18e4a148905b290bd03d98b767651c104f4eda3
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
+  WebViewJavascriptBridge: a00b2d61252aec5207e3263d46fd0fd3cfaf7895
   YDAccount: 6f93bb45b7cb113a277a4d023c4451adf8fa11eb
 
 PODFILE CHECKSUM: 30e238d849b13be483e3e74c04e6439c4d1cdb58
