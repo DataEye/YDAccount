@@ -355,7 +355,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/YDLoginTest/login",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.baicy.YDLoginTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.YDLoginTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -373,7 +373,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/YDLoginTest/login",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.baicy.YDLoginTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.YDLoginTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
