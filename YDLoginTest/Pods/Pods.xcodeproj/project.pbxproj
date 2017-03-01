@@ -188,6 +188,7 @@
 		90E6F53D95C804EA82222DDD656D7170 /* BEMCheckBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMCheckBox.h; path = Classes/BEMCheckBox.h; sourceTree = "<group>"; };
 		937A90D390BB9951F71E8DA743B950CF /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96AD91DC8E916C12AD9251ABB4554607 /* libYDAccount_v1.0.2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libYDAccount_v1.0.2.a; path = YDAccount/libYDAccount_v1.0.2.a; sourceTree = "<group>"; };
 		96CD18C988B57C335E8171E3A0D3E7A8 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		98CB731AE7F54CB4F064A58D0C94A592 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		9C81D4D5BAA6B03019DE08551BED5A97 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
@@ -216,7 +217,6 @@
 		C3A76E6296E0327E2563D934D1333815 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		C8A24559BD9565E1A3F59656E4E501CA /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F12D38738964B7617A25EE003711DA /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		CAE4CE8ED7B50D384EC5E4C9A32C64DD /* libYDAccount_v1.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libYDAccount_v1.0.a; path = YDAccount/libYDAccount_v1.0.a; sourceTree = "<group>"; };
 		CF1D37697C814BB6D5BF5C7D071F4A53 /* WebViewJavascriptBridge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WebViewJavascriptBridge-dummy.m"; sourceTree = "<group>"; };
 		D0C1618AA585020D783ABDE4D121DAB1 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
 		D31275E3B8A40FC58CD520D5FE58B896 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
@@ -461,6 +461,14 @@
 			path = "../Target Support Files/AFNetworking";
 			sourceTree = "<group>";
 		};
+		A1E55C0EAE1EB4D232FEA56AFD67416E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96AD91DC8E916C12AD9251ABB4554607 /* libYDAccount_v1.0.2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A599D77CF338CFEA508C26D592617654 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,14 +501,6 @@
 			name = Reachability;
 			sourceTree = "<group>";
 		};
-		B1BBC875A85DF54760170BE18F200CA8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CAE4CE8ED7B50D384EC5E4C9A32C64DD /* libYDAccount_v1.0.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		B9ADA49BA50A598087D37003F693CCA7 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -531,7 +531,7 @@
 			children = (
 				A438B9D5034C8CC49A408F6AF48E5446 /* YDAccount.h */,
 				AD7DAB1FA3C40E845E87893346F7A4CA /* YDActionType.h */,
-				B1BBC875A85DF54760170BE18F200CA8 /* Frameworks */,
+				A1E55C0EAE1EB4D232FEA56AFD67416E /* Frameworks */,
 				868A8A77D638CC1639AA2DE5B4439690 /* Resources */,
 			);
 			name = YDAccount;

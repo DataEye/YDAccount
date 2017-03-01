@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "YDActionType.h"
+
+typedef NS_ENUM(NSInteger, WindowType)
+{
+    Dialog = 0,
+    Activity
+};
 
 @interface YDUserAccount : NSObject
 
@@ -37,6 +42,14 @@
 +(void)autoRatate:(BOOL)enable;
 
 +(void)setDelegate:(id<YDAccountDelegate>)delegate;
+
++(void)setChannelId:(NSString*)channelId;
+
++(void)showWindow;
+
+//+(void)login:(YDUserAccount*)account;
+
++(void)logout;
 
 +(YDUserAccount*)currentAccount;
 
