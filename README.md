@@ -37,8 +37,9 @@ end
 {
   [YDAccount initWithAppId:@"xxxx"];
   [YDAccount setWindowType:Dialog];
-  [YDAccount autoRotate];
+  [YDAccount autoRotate:NO];
   [YDAccount setDeletage:self];
+  [YDAccount setChannelId:@"AppStore"];
 }
 
 -(void)reLogin
