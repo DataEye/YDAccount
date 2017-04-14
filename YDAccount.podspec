@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "YDAccount"
-  s.version          = "1.0.3"
+  s.version          = "1.0.5"
   s.summary          = "优点账户SDK"
   s.description      = <<-DESC
 优点账户系统，具备账号注册、登陆、修改密码、绑定手机、查看用户信息等账号系统基本功能，后续会持续更新并完善。

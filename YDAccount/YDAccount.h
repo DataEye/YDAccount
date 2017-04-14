@@ -37,6 +37,9 @@ typedef NS_ENUM(NSInteger, WindowType)
 
 +(void)initWithAppId:(NSString*)appId openKey:(NSString*)openKey;
 
+//该接口不建议调用
++(void)login:(NSString*)appId openKey:(NSString*)openKey;
+
 +(void)setWindowType:(WindowType)type;
 
 +(void)autoRatate:(BOOL)enable;
