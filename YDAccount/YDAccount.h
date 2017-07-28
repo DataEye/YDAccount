@@ -8,12 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSInteger, WindowType)
-{
-    Dialog = 0,
-    Activity
-};
-
 @interface YDUserAccount : NSObject
 
 //账号ID，账号惟一标识
@@ -29,6 +23,7 @@ typedef NS_ENUM(NSInteger, WindowType)
 
 @optional
 -(void)accountLogin:(YDUserAccount*)model;
+-(void)accountLogout;
 -(void)accountRegist:(YDUserAccount*)model;
 
 @end
@@ -37,20 +32,12 @@ typedef NS_ENUM(NSInteger, WindowType)
 
 +(void)initWithAppId:(NSString*)appId openKey:(NSString*)openKey;
 
-//该接口不建议调用
-+(void)login:(NSString*)appId openKey:(NSString*)openKey;
-
-+(void)setWindowType:(WindowType)type;
-
-+(void)autoRatate:(BOOL)enable;
-
 +(void)setDelegate:(id<YDAccountDelegate>)delegate;
-
-+(void)setChannelId:(NSString*)channelId;
 
 +(void)showWindow;
 
-//+(void)login:(YDUserAccount*)account;
+//接口用于将优点的账户体系与接入商自己的账号体系关联起来，将优点账户ID与用户账户ID关联到一起
++(void)bindGameUserId:(NSString*)userId;
 
 +(void)logout;
 
